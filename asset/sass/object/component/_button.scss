@@ -1,0 +1,23 @@
+/*********************************
+	USE SET
+*********************************/
+@use "../../foundation/color" as c;
+
+/*---------- button ----------*/
+.c-button {
+    outline: 2px solid c.$color-accent;
+    background: c.$color-accent;
+    border-radius: 30px;
+    color: c.$color-base;
+    display: grid;
+    font-weight: bold;
+    height: 32px;
+    padding: 3px 20px;
+    place-items: center;
+    text-decoration: none;
+
+    &:hover {
+        color: c.$color-accent;
+		background-color: c.$color-base;
+    }
+}

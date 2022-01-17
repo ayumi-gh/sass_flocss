@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/*--------------------------------
+foundation
+--------------------------------*/
+@use "foundation/base";
+@use "foundation/color";
+
+
+/*--------------------------------
+layout
+--------------------------------*/
+@use "layout/header";
+@use "layout/footer";
+
+/*--------------------------------
+object
+--------------------------------*/
+/*---------- component ----------*/
+@use "object/component/inner";
+@use "object/component/section";
+@use "object/component/button";
+
+/*---------- project ----------*/
+@use "object/project/fv";
+@use "object/project/theme";
+@use "object/project/solution";
+@use "object/project/faq";
+@use "object/project/cv";
+
+/*---------- utility ----------*/
+@use "object/utility/display";
+

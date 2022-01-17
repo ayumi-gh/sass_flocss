@@ -1,0 +1,11 @@
+/*********************************
+	USE SET
+*********************************/
+@use "../../foundation/color" as c;
+
+/*---------- inner ----------*/
+.c-inner {
+    max-width: 1220px;
+	margin: 0 auto;
+	padding: 10px 30px;
+}

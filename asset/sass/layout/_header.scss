@@ -1,0 +1,25 @@
+/*********************************
+	USE SET
+*********************************/
+@use "../foundation/color" as c;
+
+/*---------- header ----------*/
+.l-header {
+    background: c.$color-base;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    &__content {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        justify-content: space-between;
+    }
+
+    &-logo {
+        max-width: 40%;
+    }
+}
+

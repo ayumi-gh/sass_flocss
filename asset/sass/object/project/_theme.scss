@@ -1,0 +1,68 @@
+/*********************************
+	USE SET
+*********************************/
+@use "../../foundation/base" as b;
+@use "../../foundation/color" as c;
+
+/*---------- theme ----------*/
+.p-theme {
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+
+        > img {
+            aspect-ratio: 3 / 2;
+            object-fit: cover;
+            margin: 0 auto;
+            width: min(100%, 420px);
+        }
+    }
+
+    &__lists {
+        font-size: 2rem;
+
+        :not(:last-of-type) {
+            margin-bottom: .8em;
+        }
+
+        li {
+            padding-left: 1.5em;
+            position: relative;
+            
+            &:before {
+				font-family: "Font Awesome 5 Free";
+                content: "\f00c";
+                position: absolute;
+				font-weight: 900;
+				left: 0;
+            }
+
+        }
+
+    }
+}
+
+@include b.breakpoint(tablet) {
+}
+
+@include b.breakpoint(pc) {
+    .p-theme {
+        &__content {
+            align-items: center;
+            flex-direction: row;
+            gap: max(5vw, 30px);
+    
+            > img {
+                width: max(30%, 300px);
+            }
+
+            > figcaption {
+                width: 70%;
+            }
+        }
+    
+    }
+
+}

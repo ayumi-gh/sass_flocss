@@ -1,0 +1,10 @@
+/*********************************
+	USE SET
+*********************************/
+@use "../../foundation/base" as b;
+@use "../../foundation/color" as c;
+
+/*---------- display ----------*/
+.u-inline-block {
+	display: inline-block;
+}

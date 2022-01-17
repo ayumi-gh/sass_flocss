@@ -1,0 +1,82 @@
+/*********************************
+	USE SET
+*********************************/
+@use "../../foundation/base" as b;
+@use "../../foundation/color" as c;
+
+/*---------- fv ----------*/
+.p-fv {
+    background: c.$color-main;
+    color: c.$color-base;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+        place-items: center;
+        padding: 40px 0;
+		max-width: 100%;
+		font-weight: bold;
+
+        > img {
+            flex: 1;
+            height: auto;
+            width: 250px;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+
+        figcaption {
+			flex: 2;
+		}
+
+        h1 {
+            font-size: 2.8rem;
+			line-height: 1.2;
+            margin-bottom: 1.4em;
+
+            .text-100 {
+				font-size: 5rem;
+			}
+			.text-96 {
+				font-size: 4.2rem;
+			}
+			.text-80 {
+				font-size: 3.5rem;
+			}
+        }
+
+        p {
+			font-size: 2.2rem;
+		}
+        
+    }
+}
+
+
+@include b.breakpoint(tablet) {
+}
+
+@include b.breakpoint(pc) {
+
+    .p-fv {
+        &__content {
+            flex-direction: row-reverse;
+
+            h1 {
+				font-size: 5.6rem;
+				.text-100 {
+					font-size: 8rem;
+				}
+				.text-96 {
+					font-size: 7.2rem;
+				}
+				.text-80 {
+					font-size: 6.5rem;
+				}
+			}
+			p {
+				font-size: 2.4rem;
+			}
+        }
+    }
+}

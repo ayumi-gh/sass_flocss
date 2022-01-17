@@ -1,0 +1,21 @@
+/*********************************
+	USE SET
+*********************************/
+@use "../../foundation/color" as c;
+
+/*---------- section ----------*/
+.c-section {
+	background-color: c.$color-main-100;
+    padding: 50px 0 90px;
+
+    &:nth-of-type(odd) {
+        background: c.$color-base;
+    }
+
+    &__title {
+        font-size: 2.8rem;
+	    font-weight: bold;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+}

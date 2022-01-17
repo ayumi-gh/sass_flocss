@@ -1,0 +1,20 @@
+/*********************************
+	USE SET
+*********************************/
+@use "../../foundation/base" as b;
+@use "../../foundation/color" as c;
+
+/*---------- cv ----------*/
+.p-cv {
+    &__content {
+        margin: 0 auto;
+        width: min(100%, 700px);
+
+        .c-button {
+            margin: 10px auto;
+            line-height: 2rem;
+            font-size: 2rem;
+            border: 5px solid c.$color-accent;
+        }
+    }
+}
